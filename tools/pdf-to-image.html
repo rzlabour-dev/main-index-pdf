@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF to Image Converter | Free Online Tool</title>
+    <meta name="description" content="Convert PDF to JPG, PNG, or WebP images. 100% free, no file uploads, client-side processing.">
+    
+    <!-- Same head content as index.html -->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="../css/mobile.css">
+    
+    <!-- Tool-specific CSS -->
+    <style>
+        .tool-page-header {
+            background: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .tool-page-header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+        }
+        
+        .tool-page-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .tool-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        /* Copy your existing converter CSS here */
+        /* The CSS from your original converter tool */
+        /* (All the CSS that was inside your original HTML file) */
+        
+        /* Add these tool-specific classes */
+        .tool-info-box {
+            background: #f0f4ff;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 40px;
+            border-left: 4px solid #4361ee;
+        }
+        
+        .tool-steps {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .tool-step {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .tool-step-number {
+            width: 50px;
+            height: 50px;
+            background: #4361ee;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin: 0 auto 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Same header as index.html (but adjust paths with ../) -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="PDF Tools Logo" class="logo-img">
+                    <span class="logo-text">PDF<span class="logo-highlight">Tools</span></span>
+                </a>
+            </div>
+            
+            <!-- Same navigation but highlight PDF to Image as active -->
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link active"><i class="fas fa-tools"></i> Tools <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="pdf-to-image.html" class="dropdown-item active"><i class="fas fa-file-pdf"></i> PDF to Image</a>
+                            <a href="image-to-pdf.html" class="dropdown-item"><i class="fas fa-images"></i> Image to PDF</a>
+                            <!-- ... rest of dropdown ... -->
+                        </div>
+                    </li>
+                    <!-- ... rest of navigation ... -->
+                </ul>
+            </nav>
+            
+            <!-- Same user menu -->
+            <div class="user-menu">
+                <button class="btn btn-outline" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="../pages/login.html" class="btn btn-login">Login</a>
+                <a href="../pages/signup.html" class="btn btn-primary">Sign Up Free</a>
+            </div>
+            
+            <!-- Mobile toggle -->
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+        </div>
+        
+        <!-- Mobile navigation -->
+        <nav class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation" hidden>
+            <!-- Same as index.html but adjust paths -->
+        </nav>
+    </header>
+
+    <!-- Tool Header -->
+    <section class="tool-page-header">
+        <div class="container">
+            <h1><i class="fas fa-file-pdf"></i> PDF to Image Converter</h1>
+            <p>Convert PDF pages to JPG, PNG, or WebP images. 100% free, secure, and works entirely in your browser.</p>
+        </div>
+    </section>
+
+    <!-- Tool Information -->
+    <div class="container">
+        <div class="tool-info-box">
+            <h3><i class="fas fa-info-circle"></i> How This Tool Works</h3>
+            <p>This tool converts your PDF files to images completely in your browser. Your files never leave your computer, ensuring maximum privacy and security.</p>
+        </div>
+        
+        <div class="tool-steps">
+            <div class="tool-step">
+                <div class="tool-step-number">1</div>
+                <h4>Upload PDF</h4>
+                <p>Drag & drop or select your PDF file</p>
+            </div>
+            <div class="tool-step">
+                <div class="tool-step-number">2</div>
+                <h4>Convert</h4>
+                <p>Choose format and quality settings</p>
+            </div>
+            <div class="tool-step">
+                <div class="tool-step-number">3</div>
+                <h4>Download</h4>
+                <p>Get images (single JPG or ZIP archive)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Converter Tool -->
+    <main class="tool-container">
+        <!-- PASTE YOUR ENTIRE CONVERTER HTML HERE -->
+        <!-- Copy everything from your original converter (after the header) -->
+        <!-- This includes: upload area, options, preview section, etc. -->
+        
+        <div class="app-card">
+            <div class="card-header">
+                <h2>Upload & Convert PDF</h2>
+                <p>Drag and drop or click to select your PDF file</p>
+            </div>
+            
+            <div class="card-body">
+                <!-- Your existing converter interface -->
+                <!-- Copy all the converter HTML from your original file -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Same footer as index.html (adjust paths with ../) -->
+    <footer class="main-footer">
+        <!-- Footer content (same as index.html but with ../ for paths) -->
+    </footer>
+
+    <!-- JavaScript -->
+    <!-- Load the same libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    
+    <!-- Your converter JavaScript -->
+    <script>
+        // Copy your entire converter JavaScript here
+        // All the JS code from your original converter
+    </script>
+    
+    <!-- Shared JS files -->
+    <script src="../js/main.js"></script>
+    <script src="../js/menu.js"></script>
+</body>
+</html>
